@@ -1,0 +1,317 @@
+:root {
+  --header-color: #212121;
+  --text-color: #757575;
+  --background-color-light: #f5f4fa;
+  --background-color-dark: #2f303a;
+  --active-color: #2196f3;
+  --main-color: #fff;
+  --logo-top-color: #000;
+  --main-font: 'Roboto', sans-serif;
+}
+
+body {
+  color: var(--text-color);
+  font-family: var(--main-font);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+ul {
+  list-style: none;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 0;
+}
+
+h1,
+h2,
+h3,
+ul,
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+/* styles for all pages*/
+.link {
+  text-decoration: none;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--active-color);
+}
+
+.logo {
+  font-family: 'Raleway';
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+}
+
+.logo__accent {
+  color: var(--active-color);
+}
+
+.section__header {
+  font-size: 36px;
+  line-height: 1.17;
+  padding-bottom: 50px;
+  text-align: center;
+  color: var(--header-color);
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 94px 0;
+}
+
+/* Header */
+.container-header {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 24.5px 0;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.logo-header {
+  color: var(--logo-top-color);
+  margin-right: 93px;
+}
+
+.header__contact {
+  display: flex;
+  column-gap: 50px;
+  list-style: none;
+}
+
+.header__menu {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 254px;
+}
+
+.header__nav-link {
+  color: var(--header-color);
+}
+
+.header__contact-link {
+  color: var(--text-color);
+}
+
+/*First section of the main page*/
+.banner {
+  background-color: var(--background-color-dark);
+}
+
+.banner__title {
+  color: var(--main-color);
+  font-weight: 900;
+  font-size: 44px;
+  letter-spacing: 0.06em;
+  line-height: 1.36;
+  margin-bottom: 30px;
+  padding-top: 106px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.banner__button {
+  background-color: var(--active-color);
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: var(--main-color);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1.87;
+  margin: 30px 500px 76px;
+  padding: 10px 41px;
+  text-decoration: none;
+}
+
+/*Second section of the main page - LOREM IPSUM*/
+.feature__title {
+  color: var(--header-color);
+  line-height: 1.14;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.feature__description {
+  line-height: 1.71;
+}
+
+.section__features {
+  column-gap: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*Third section of the main page - What do we work with*/
+.boxes {
+  column-gap: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*Fourth section of the main page - Our Team*/
+.employees {
+  column-gap: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.employees__employee {
+  background-color: var(--main-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.employee__title {
+  color: var(--header-color);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.19;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.employee__subtitle {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section__team {
+  background-color: var(--background-color-light);
+}
+
+/*Footer*/
+.container-footer {
+  align-items: flex-start;
+  padding: 60px 0;
+}
+
+.footer {
+  background-color: var(--background-color-dark);
+}
+
+.logo-footer {
+  color: var(--main-color);
+}
+
+.contacts {
+  line-height: 1.71;
+  font-style: normal;
+  margin-top: 20px;
+}
+
+.contacts__contact:not(:last-child) {
+  margin-bottom: 4.5px;
+}
+
+.contacts__contact-item {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.contacts__contact-place {
+  color: var(--main-color);
+}
+
+/* Portfolio page */
+.header-portfolio {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: #ececec;
+}
+
+.filters {
+  column-gap: 8px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.filter__button {
+  background-color: var(--background-color-light);
+  border: none;
+  border-radius: 4px;
+  color: var(--header-color);
+  cursor: pointer;
+  font-family: var(--main-font);
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  line-height: 1.63;
+  padding: 6px 22px;
+  text-align: center;
+}
+
+.filter__button:hover,
+.filter__button:focus {
+  background-color: var(--active-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  color: var(--main-color);
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 34px;
+  row-gap: 30px;
+}
+
+.project {
+  background-color: var(--main-color);
+  flex-basis: calc((100%-60px) / 3);
+}
+
+.project__box {
+  border: 1px solid #eee;
+  border-top: none;
+  width: 370px;
+}
+
+.project__title {
+  color: var(--header-color);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  padding: 20px 24px 0px;
+}
+
+.project__subtitle {
+  font-size: 16px;
+  line-height: 1.88;
+  padding-left: 24px;
+  margin-top: 0;
+  padding: 0px 24px 20px;
+}
