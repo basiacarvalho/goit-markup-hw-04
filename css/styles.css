@@ -274,6 +274,34 @@ p {
   padding: 12px;
 }
 
+/*Fifth section of the main page - Our Clients*/
+.client-logos {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.client-logo-container:hover *,
+.client-logo-container:focus * {
+  fill: var(--active-color);
+}
+
+.client-logo-container:hover,
+.client-logo-container:focus {
+  border-color: var(--active-color);
+}
+
+.client-logo-icon {
+  fill: #afb1b8;
+}
+
+.client-logo-container {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  padding: 16px 32px;
+}
 /*Footer*/
 .container-footer {
   align-items: flex-start;
