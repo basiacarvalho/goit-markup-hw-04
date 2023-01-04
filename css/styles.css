@@ -81,19 +81,19 @@ p {
   width: 206px;
 }
 
-.social-links-container {
+.social-link__container {
   width: 44px;
   height: 44px;
   padding: 12px;
 }
 
-.social-links-container:hover *,
-.social-links-container:focus * {
+.social-link__container:hover *,
+.social-link__container:focus * {
   fill: var(--main-color);
 }
 
-.social-links-container:hover,
-.social-links-container:focus {
+.social-link__container:hover,
+.social-link__container:focus {
   border-radius: 50%;
   background-color: var(--active-color);
 }
@@ -201,11 +201,17 @@ p {
 }
 
 /*Second section of the main page - LOREM IPSUM*/
+.features {
+  column-gap: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .feature {
   width: 270px;
 }
 
-.feature-icon-container {
+.feature__icon-container {
   background-color: var(--background-color-light);
   border-radius: 4px;
   width: 270px;
@@ -225,12 +231,6 @@ p {
   line-height: 1.72;
 }
 
-.section__features {
-  column-gap: 30px;
-  display: flex;
-  justify-content: space-between;
-}
-
 /*Third section of the main page - What do we work with*/
 .boxes {
   column-gap: 30px;
@@ -245,7 +245,7 @@ p {
   justify-content: space-between;
 }
 
-.employees__employee {
+.employee {
   background-color: var(--main-color);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14),
     0 2px 1px rgba(0, 0, 0, 0.2);
@@ -268,41 +268,41 @@ p {
   text-align: center;
 }
 
-.section__team {
+.section-team {
   background-color: var(--background-color-light);
 }
 
-.social-link-icon {
+.social-link__icon {
   fill: var(--icon-color);
 }
 
-.employee__social-links {
+.social-links-employee {
   margin: 15px 32px;
   padding-bottom: 12px;
 }
 
 /*Fifth section of the main page - Our Clients*/
-.client-logos {
+.clients {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
 }
 
-.client-logo-container:hover *,
-.client-logo-container:focus * {
+.client__container:hover *,
+.client__container:focus * {
   fill: var(--active-color);
 }
 
-.client-logo-container:hover,
-.client-logo-container:focus {
+.client__container:hover,
+.client__container:focus {
   border-color: var(--active-color);
 }
 
-.client-logo-icon {
+.client__icon {
   fill: var(--icon-color);
 }
 
-.client-logo-container {
+.client__container {
   width: 170px;
   height: 92px;
   border: 1px solid var(--icon-color);
@@ -315,7 +315,7 @@ p {
   align-items: flex-start;
 }
 
-.container-footer__contacts {
+.business-card {
   margin: 60px 70px 60px 0;
 }
 
@@ -323,11 +323,11 @@ p {
   background-color: var(--background-color-dark);
 }
 
-.social-link-icon-footer {
+.social-link__icon-footer {
   fill: var(--main-color);
 }
 
-.social-links-container-footer {
+.social-link__container-footer {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -355,15 +355,15 @@ p {
   margin-top: 20px;
 }
 
-.contacts__contact:not(:last-child) {
+.contact:not(:last-child) {
   margin-bottom: 4.5px;
 }
 
-.contacts__contact-item {
+.contact__item {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.contacts__contact-place {
+.contact__place {
   color: var(--main-color);
 }
 
