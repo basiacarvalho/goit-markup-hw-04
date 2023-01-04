@@ -34,6 +34,11 @@ p {
 }
 
 /* styles for all pages*/
+.container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
 .link {
   text-decoration: none;
 }
@@ -54,25 +59,20 @@ p {
   color: var(--active-color);
 }
 
-.section__header {
-  font-size: 36px;
-  line-height: 1.17;
-  padding-bottom: 50px;
-  text-align: center;
-  color: var(--header-color);
-}
-
-.container {
-  margin: 0 auto;
-  width: 1200px;
-}
-
 .section {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 94px 0;
+}
+
+.section__header {
+  font-size: 36px;
+  line-height: 1.17;
+  padding-bottom: 50px;
+  text-align: center;
+  color: var(--header-color);
 }
 
 .social-links {
@@ -107,30 +107,20 @@ p {
   padding: 24.5px 0;
 }
 
-.header-navigation {
-  display: flex;
-  align-items: center;
-}
-
-.logo-header {
-  color: var(--logo-top-color);
-  margin-right: 93px;
-}
-
 .header__contact {
   display: flex;
   column-gap: 50px;
   list-style: none;
 }
 
-.header__contact-item {
-  display: flex;
-  align-items: center;
-}
-
 .header__contact-icon {
   fill: var(--text-color);
   margin-right: 10px;
+}
+
+.header__contact-item {
+  display: flex;
+  align-items: center;
 }
 
 .header__contact-item:hover *,
@@ -139,10 +129,19 @@ p {
   fill: var(--active-color);
 }
 
+.header__contact-link {
+  color: var(--text-color);
+}
+
 .header__menu {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
 }
 
 .header__nav {
@@ -156,8 +155,9 @@ p {
   color: var(--header-color);
 }
 
-.header__contact-link {
-  color: var(--text-color);
+.logo-header {
+  color: var(--logo-top-color);
+  margin-right: 93px;
 }
 
 /*First section of the main page*/
@@ -171,18 +171,6 @@ p {
   border: 1px solid var(--logo-top-color);
   box-sizing: border-box;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.banner__title {
-  color: var(--main-color);
-  font-weight: 900;
-  font-size: 44px;
-  letter-spacing: 0.06em;
-  line-height: 1.36;
-  margin-bottom: 30px;
-  padding-top: 106px;
-  text-align: center;
-  text-transform: uppercase;
 }
 
 .banner__button {
@@ -200,6 +188,18 @@ p {
   text-decoration: none;
 }
 
+.banner__title {
+  color: var(--main-color);
+  font-weight: 900;
+  font-size: 44px;
+  letter-spacing: 0.06em;
+  line-height: 1.36;
+  margin-bottom: 30px;
+  padding-top: 106px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 /*Second section of the main page - LOREM IPSUM*/
 .features {
   column-gap: 30px;
@@ -209,6 +209,10 @@ p {
 
 .feature {
   width: 270px;
+}
+
+.feature__description {
+  line-height: 1.72;
 }
 
 .feature__icon-container {
@@ -225,10 +229,6 @@ p {
   margin-bottom: 10px;
   margin-top: 30px;
   text-transform: uppercase;
-}
-
-.feature__description {
-  line-height: 1.72;
 }
 
 /*Third section of the main page - What do we work with*/
@@ -252,6 +252,12 @@ p {
   border-radius: 0 0 4px 4px;
 }
 
+.employee__subtitle {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
 .employee__title {
   color: var(--header-color);
   font-size: 16px;
@@ -262,18 +268,8 @@ p {
   margin-bottom: 10px;
 }
 
-.employee__subtitle {
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-}
-
 .section-team {
   background-color: var(--background-color-light);
-}
-
-.social-link__icon {
-  fill: var(--icon-color);
 }
 
 .social-links-employee {
@@ -281,11 +277,23 @@ p {
   padding-bottom: 12px;
 }
 
+.social-link__icon {
+  fill: var(--icon-color);
+}
+
 /*Fifth section of the main page - Our Clients*/
 .clients {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
+}
+
+.client__container {
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  padding: 16px 32px;
 }
 
 .client__container:hover *,
@@ -302,35 +310,36 @@ p {
   fill: var(--icon-color);
 }
 
-.client__container {
-  width: 170px;
-  height: 92px;
-  border: 1px solid var(--icon-color);
-  border-radius: 4px;
-  padding: 16px 32px;
-}
 /*Footer*/
+.business-card {
+  margin: 60px 70px 60px 0;
+}
+
+.contacts {
+  line-height: 1.71;
+  font-style: normal;
+  margin-top: 20px;
+}
+
+.contact__item {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.contact:not(:last-child) {
+  margin-bottom: 4.5px;
+}
+
+.contact__place {
+  color: var(--main-color);
+}
+
 .container-footer {
   display: flex;
   align-items: flex-start;
 }
 
-.business-card {
-  margin: 60px 70px 60px 0;
-}
-
 .footer {
   background-color: var(--background-color-dark);
-}
-
-.social-link__icon-footer {
-  fill: var(--main-color);
-}
-
-.social-link__container-footer {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .join-us {
@@ -349,31 +358,17 @@ p {
   color: var(--main-color);
 }
 
-.contacts {
-  line-height: 1.71;
-  font-style: normal;
-  margin-top: 20px;
+.social-link__container-footer {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.contact:not(:last-child) {
-  margin-bottom: 4.5px;
-}
-
-.contact__item {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.contact__place {
-  color: var(--main-color);
+.social-link__icon-footer {
+  fill: var(--main-color);
 }
 
 /* Portfolio page */
-.header-portfolio {
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-color: #ececec;
-}
-
 .filters {
   column-gap: 8px;
   display: flex;
@@ -404,6 +399,12 @@ p {
   color: var(--main-color);
 }
 
+.header-portfolio {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: #ececec;
+}
+
 .projects {
   display: flex;
   flex-wrap: wrap;
@@ -413,13 +414,32 @@ p {
 
 .project {
   background-color: var(--main-color);
-  flex-basis: calc((100%-60px) / 3);
+  margin-right: 45px;
+}
+
+.project:hover,
+.project:focus {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.project:nth-child(3n + 3) {
+  margin-right: 0px;
 }
 
 .project__box {
   border: 1px solid #eee;
+  box-sizing: border-box;
   border-top: none;
   width: 370px;
+}
+
+.project__subtitle {
+  font-size: 16px;
+  line-height: 1.88;
+  padding-left: 24px;
+  margin-top: 0;
+  padding: 0 24px 20px;
 }
 
 .project__title {
@@ -429,12 +449,4 @@ p {
   line-height: 2;
   letter-spacing: 0.06em;
   padding: 20px 24px 0;
-}
-
-.project__subtitle {
-  font-size: 16px;
-  line-height: 1.88;
-  padding-left: 24px;
-  margin-top: 0;
-  padding: 0 24px 20px;
 }
