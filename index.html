@@ -166,7 +166,7 @@
               />
               <h3 class="employee__title">John Doe</h3>
               <p class="employee__subtitle">Product Designer</p>
-              <ul class="social-links">
+              <ul class="employee__social-links social-links">
                 <li>
                   <div class="social-links-container">
                     <svg class="social-link-icon" width="20" height="20">
@@ -207,7 +207,7 @@
               />
               <h3 class="employee__title">John Doe</h3>
               <p class="employee__subtitle">Frontend Developer</p>
-              <ul class="social-links">
+              <ul class="employee__social-links social-links">
                 <li>
                   <div class="social-links-container">
                     <svg class="social-link-icon" width="20" height="20">
@@ -248,7 +248,7 @@
               />
               <h3 class="employee__title">John Doe</h3>
               <p class="employee__subtitle">Marketing</p>
-              <ul class="social-links">
+              <ul class="employee__social-links social-links">
                 <li>
                   <div class="social-links-container">
                     <svg class="social-link-icon" width="20" height="20">
@@ -289,7 +289,7 @@
               />
               <h3 class="employee__title">John Doe</h3>
               <p class="employee__subtitle">UI Designer</p>
-              <ul class="social-links">
+              <ul class="employee__social-links social-links">
                 <li>
                   <div class="social-links-container">
                     <svg class="social-link-icon" width="20" height="20">
@@ -376,30 +376,65 @@
     </main>
     <footer class="footer">
       <div class="container container-footer">
-        <a class="link logo logo-footer" href="./index.html"
-          ><span class="logo__accent">Web</span>Studio</a
-        >
-        <address class="contacts">
-          <ul class="contacts__contact-list">
-            <li class="contacts__contact">
-              <a
-                class="link contacts__contact-place"
-                href="https://goo.gl/maps/wp7BMmqfB1jZp6Ye8"
-                target="_blank"
-              >
-                m. Warszawa, Aleje Jerozolimskie 21
-              </a>
+        <div class="container-footer__contacts">
+          <a class="link logo logo-footer" href="./index.html"
+            ><span class="logo__accent">Web</span>Studio</a
+          >
+          <address class="contacts">
+            <ul class="contacts__contact-list">
+              <li class="contacts__contact">
+                <a
+                  class="link contacts__contact-place"
+                  href="https://goo.gl/maps/wp7BMmqfB1jZp6Ye8"
+                  target="_blank"
+                >
+                  m. Warszawa, Aleje Jerozolimskie 21
+                </a>
+              </li>
+              <li class="contacts__contact">
+                <a class="link contacts__contact-item" href="mailto:info@example.com"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="contacts__contact">
+                <a class="link contacts__contact-item" href="tel:+48111111111">+48 111 111 111</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="join-us">
+          <h3 class="join-us__title">dołącz do nas</h3>
+          <ul class="social-links">
+            <li>
+              <div class="social-links-container social-links-container-footer">
+                <svg class="social-link-icon-footer" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram-2"></use>
+                </svg>
+              </div>
             </li>
-            <li class="contacts__contact">
-              <a class="link contacts__contact-item" href="mailto:info@example.com"
-                >info@example.com</a
-              >
+            <li>
+              <div class="social-links-container social-links-container-footer">
+                <svg class="social-link-icon-footer" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter-1"></use>
+                </svg>
+              </div>
             </li>
-            <li class="contacts__contact">
-              <a class="link contacts__contact-item" href="tel:+48111111111">+48 111 111 111</a>
+            <li>
+              <div class="social-links-container social-links-container-footer">
+                <svg class="social-link-icon-footer" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook-1"></use>
+                </svg>
+              </div>
+            </li>
+            <li>
+              <div class="social-links-container social-links-container-footer">
+                <svg class="social-link-icon-footer" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin-1"></use>
+                </svg>
+              </div>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>
