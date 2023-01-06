@@ -53,6 +53,7 @@ p {
   font-size: 26px;
   font-weight: 700;
   line-height: 1.19;
+  text-decoration: none;
 }
 
 .logo__accent {
@@ -400,9 +401,7 @@ p {
 }
 
 .header-portfolio {
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-color: #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
 .projects {
