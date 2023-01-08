@@ -119,19 +119,16 @@ p {
   margin-right: 10px;
 }
 
-.header__contact-item {
-  display: flex;
-  align-items: center;
-}
-
-.header__contact-item:hover *,
-.header__contact-item:focus * {
+.header__contact-link:hover *,
+.header__contact-link:focus * {
   color: var(--active-color);
   fill: var(--active-color);
 }
 
 .header__contact-link {
   color: var(--text-color);
+  display: flex;
+  align-items: center;
 }
 
 .header__menu {
